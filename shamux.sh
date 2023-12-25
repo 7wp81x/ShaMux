@@ -49,7 +49,7 @@ check_requirements() {
 }
 
 main() {
-    torrc_path="$PREFIX/etc/tor/"
+    torrc_path="$PREFIX/etc/tor"
 
     if [ ! -f "config" ];then
         touch config
@@ -93,7 +93,6 @@ main() {
     mv config "$torrc_path/torrc"
     mv changeip $PREFIX/bin/
     termux-reload-settings
-    source "$torrc_path/torrc"
     sv-enable tor
     sv up tor 
     chmod +x "$PREFIX/bin/changeip"
