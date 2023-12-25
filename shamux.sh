@@ -92,8 +92,10 @@ main() {
     fi
     mv config "$torrc_path/torrc"
     mv changeip $PREFIX/bin/
-    sv enable tor
-    sv up tor
+    termux-reload-settings
+    source "$torrc_path/torrc"
+    sv-enable tor
+    sv up tor 
     chmod +x "$PREFIX/bin/changeip"
     echo -e "\n\n\033[1;92m[\033[1;97m+\033[1;92m] run '\033[1;97m. torsocks on\033[1;92m' to on Tor mode.\033[0m"
     echo -e "\033[1;92m[\033[1;97m+\033[1;92m] run '\033[1;97m. torsocks off\033[1;92m' to off Tor mode.\033[0m"
