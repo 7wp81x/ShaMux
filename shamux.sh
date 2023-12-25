@@ -21,6 +21,11 @@ check_requirements() {
 	    missing="1"
 	fi
 
+        if [ ! -f "${bin}/nc" ];then
+	    echo -e "\033[1;92m[\033[1;97m!\033[1;92m] '\033[1;93mnetcat\033[1;92m' is not installed...\033[0m"
+	    missing="1"
+	fi
+ 
 	if [ ! -f "${bin}/torsocks" ];then
 	    echo -e "\033[1;92m[\033[1;97m!\033[1;92m] '\033[1;93mtorsocks\033[1;92m' is not installed...\033[0m"
 	    missing="1"
