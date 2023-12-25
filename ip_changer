@@ -1,0 +1,14 @@
+#!/bin/bash
+change='echo -e "AUTHENTICATE \"CTRL_PORT_PASSWORD\"\r\nSIGNAL NEWNYM\r\nQUIT\r\n" | nc 127.0.0.1 9051'
+tsocks_enabled=$(echo $LD_PRELOAD | grep -q torsocks && echo "on" || echo "off")
+
+if [ $tsocks_enabled == "off" ];then
+	eval $change
+else
+	printf "\033[1;92m[\033[1;97m*\033[1;92m] Temporary disabling torsocks...\033[0m\n"
+	. torsocks off > /dev/null
+	eval $change
+	. torsocks on > /dev/null
+fi
+printf "\033[1;92m[\033[1;97m*\033[1;92m] Identity changed.\033[0m\n"
+
