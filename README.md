@@ -1,9 +1,7 @@
 # ShaMux
-Make your termux invisible on internet.
-
-<br><img src="https://img.shields.io/badge/made%20with-bash-green.svg?style=flat-square" alt="made with bash">
+Make your termux invisible on internet.<br><img src="https://img.shields.io/badge/made%20with-bash-green.svg?style=flat-square" alt="made with bash">
 ## Screenshot
-<img src="https://github.com/Mrp1r4t3/ShaMux/blob/main/IMG_20231225_174753.jpg" width="100%" height="100%">
+<img src="https://github.com/Mrp1r4t3/ShaMux/blob/main/IMG_20231225_174753.jpg" width="130%" height="130%">
 
 ## Termux Installation
 
