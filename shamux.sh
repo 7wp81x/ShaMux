@@ -1,6 +1,6 @@
 #!/bin/bash
 # Author: 7wp81x
-# Github: https://github.com/MrP1r4t3
+# Github: https://github.com/7wp81x
 
 banner() {
     clear
@@ -9,7 +9,7 @@ banner() {
     echo -e "\033[1;97m   \\ \\| '_ \\ / _\` |\033[1;92m/    \\| | | \\ \\/ /"
     echo -e "\033[1;97m   _\\ \\ | | | (_| \\e[1;92m/ /\\/\\ \\ |_| |>  <"
     echo -e "\033[1;97m   \\__/_| |_|\\__,_\\e[1;92m\\/    \\/\\__,_/_/\\_\\ \033[1;93mv1.0\n"
-    echo -e " \033[1;37;42m Termux Anonimizer by: MrP1r4t3 (Github) \033[0m"
+    echo -e " \033[1;37;42m Termux Anonimizer by: 7wp81x (Github) \033[0m"
     echo -e "\033[0m"
 }
 
